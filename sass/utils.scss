@@ -1,0 +1,168 @@
+@import "bourbon/_bourbon.scss";
+/** font-sizes **/
+
+.fnt18 {font-size: 18px !important;}
+
+.fnt16 {font-size: 16px !important;}
+
+.fnt14 {font-size: 14px;}
+
+.fnt13 {font-size: 13px;}
+
+.fnt12 {font-size: 12px;}
+
+.fnt-26 {font-size: 26px;}
+
+.fnt-24 {font-size: 24px;}
+
+.fnt-20 {font-size: 20px;}
+
+.fnt-21 {font-size:21px;}
+
+/** background colors **/
+
+.bg-clr {background: #f4f4f4;}
+
+.bg-clrwht {background: #fff;}
+
+.bg-clrfa {background: #fafafa;}
+
+.bg-lgt-gry {background: #cccccc;}
+
+.bg-333 {background: #333;}
+
+.bg-pinkf05{background: #f05567;}
+
+.bg-brand {background: #f05568;}
+/** colors **/
+
+.clr-gry {color: #999;}
+
+.clr-white {color: #fff;}
+
+.clr-thickgray {color: #666;}
+
+.clr-ltgry {color: #a2a2a2;}
+
+.clr-lteblue {color: #6ac4ef;}
+
+.clr-pink {color: #f05568;}
+
+.clr-pink666 {color: #ff6666;}
+
+.clr-pinkf05{color:#f05567;}
+
+
+/** line-heights **/
+
+.lne-hgt{line-height: 30px;}
+
+.lne-hgt34{line-height:34px;}
+
+/** block and inline elements **/
+
+.text-transfrm {text-transform: uppercase;}
+
+.block-inline{display: inline-block;}
+
+/** overide padding **/
+
+.padding-rgt0 {padding-right: 0;}
+
+.padding-lft0 {padding-left: 0;}
+
+.padding0 {padding-top: 0; padding-bottom: 0;}
+
+.padding-rgt10 {padding-right: 10px;}
+.padding-rgt20 {padding-right: 20px;}
+
+/** margins **/
+.mt-10{
+	margin-top: 10px !important;
+}
+.mt-20{
+	margin-top: 20px !important;
+}
+/** borders **/
+
+.brder-rght {border-right: 1px solid #dedede;}
+
+
+.brder-lft {border-left: 1px solid #dedede;}
+
+.brder-lft-e3{border-left:1px solid #e3e3e3;}
+
+.ovflow{overflow: hidden;}
+
+.brder-0{
+	border : 0px;
+	border-bottom: 0px !important;
+}
+.vertcle-top{ vertical-align: top;}
+
+/** width **/
+
+.wdth100{width:100%;}
+.width50 { min-width: 50px;}
+.br-50p{
+	border-radius: 50%;
+}
+.pull-left{
+	float: left;
+}
+.pull-right{
+	float: right;
+}
+
+/** flex **/
+.flex{
+	display: flex;
+}
+.inline-table{
+	display: inline-table;
+}
+
+/** weight **/
+.fw-300{
+	font-weight: 300;
+}
+.fw-400{
+	font-weight: 400;
+}
+.fw-600{
+	font-weight: 600;
+}
+
+.light-text{
+	color: #a2a2a2;
+	font-weight: 300;
+	*{
+		font-weight: 300;
+		color: #a2a2a2;
+	}
+}
+@mixin long-shadow(){
+	box-shadow: rgb(18, 24, 31) 7px 7px,
+    rgb(18, 24, 31) 8px 8px,
+    rgb(18, 24, 31) 9px 9px
+}
+
+.line-through{
+	text-decoration: line-through;
+}
+
+.checkbox-custom{
+    opacity: 0;
+    position: absolute;   
+}
+
+.light-text{
+	color: #a2a2a2 !important;
+    font-weight: 300;
+}
+
+.center-items{
+	display: inline-flex;
+	justify-content : center;
+	align-items : center;
+}

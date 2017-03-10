@@ -1,0 +1,264 @@
+@import "bourbon/_bourbon.scss";
+@import "vars.scss";
+
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return $remSize * 1rem;
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// mixins - border radius
+
+@mixin border-radius($radius:.25em) {
+  border-radius: $radius;
+}
+
+// layout - breakpoints
+   
+$S:     320px;   
+$M:     768px;     
+$L:     1170px;     
+
+// layout - media queries
+
+@mixin MQ($canvas) {
+  @if $canvas == S {
+   @media only screen and (min-width: $S) { @content; } 
+  }
+  @else if $canvas == M {
+   @media only screen and (min-width: $M) { @content; } 
+  }
+  @else if $canvas == L {
+   @media only screen and (min-width: $L) { @content; } 
+  }
+}
+
+
+
+.cd-container { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+	width: calc(100%);
+	max-width: $L; 
+	margin: 0 auto;
+
+	&::after { /* clearfix */
+		content: '';
+		display: table;
+		clear: both;
+	}
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+
+
+#cd-timeline {
+	position: relative;
+	padding: 2em 0;
+	margin: {
+		top: 0em;
+		bottom: 0em;
+	}
+
+	&::before {
+		/* this is the vertical line */
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 18px;
+		height: 100%;
+		width: 4px;
+		background: #e5e5e5;
+	}
+
+	@include MQ(L) {
+		margin: {
+			top: 0em;
+			bottom: 0em;
+		}
+
+		&::before {
+			left: 52px;
+			margin-left: -2px;
+		}
+	}
+}
+
+.cd-timeline-block {
+	position: relative;
+	margin: 2em 0;
+	@include clearfix;
+
+	&:first-child {
+		margin-top: 0;
+	}
+	&:last-child{
+		margin-bottom: 0;
+		.cd-timeline-content {
+			border-bottom: 0px;
+		}
+	}
+	@include MQ(L) {
+		margin: 2em 0;
+
+		&:first-child {
+			margin-top: 0;
+		}
+
+		&:last-child {
+			margin-bottom: 0;
+		}
+	}
+}
+
+.cd-timeline-img {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 40px;
+	height: 40px;
+	max-width: 40px;
+	max-height: 40px;
+	border-radius: 50%;
+	box-shadow: 0 0 0 4px $color inset 0 2px 0 rgba(#000, .08), 0 3px 0 4px rgba(#000, .05) ;
+	display: flex;
+	justify-content : center;
+	align-items : center;
+	background: $color;
+	img {
+	    display: block;
+	    max-width: 24px;
+	    position: relative;
+	    padding: 2px;
+	    vertical-align: baseline;
+	    display: block;
+	    position: relative;
+	    text-align: center;
+	    max-height: 30px;
+	}
+
+	@include MQ(L) {
+		width: 60px;
+		height: 60px;
+		left: 52px;
+		margin-left: -20px;
+	}
+}
+
+.cd-timeline-content {
+	position: relative;
+	margin-left: 54px;
+	@include border-radius;
+	font-family: 'Source Sans Pro', sans-serif;
+	padding: 1em;
+	border-bottom: 1px solid #f5f5f5;
+	@include clearfix;
+	img{
+		margin-top: 7px;	
+	}
+	h2 {
+		color: #2b2d2b;
+		font-size: 1em;
+	}
+
+	p, .cd-read-more, .cd-date {
+		color: #5d5e5c;
+		font-family: 'Source Sans Pro', sans-serif;
+		display: block;
+		@include font-size(12px);
+		a{
+			text-decoration: underline;
+		}
+	}
+	.cd-read-more{
+		color: #3cb1e6;
+		text-transform: uppercase;
+		@extend .fw-600;
+	}
+	.cd-timeline-btn{
+		text-decoration: none;
+		font-size: 12px;
+		background: #666666;
+		color: #fff;
+		padding: 3px 5px;
+	}
+	p {
+		margin: 0.2em 0;
+		line-height: 1.6;
+	}
+	.cd-date {
+		float: left;
+		padding: .8em 0;
+		opacity: .7;
+	}
+
+	@include MQ(M) {
+		h2 {
+			@include font-size(16px);
+		}
+
+		p {
+			@include font-size(16px);
+		}
+
+		.cd-read-more, .cd-date {
+			@include font-size(14px);
+		}
+	}
+
+	@include MQ(L) {
+		margin-left: 54px;
+	    padding: 0px 1.6em 20px 3.6em;
+		width: calc(100% - 46px);
+
+		&::before {
+			top: 24px;
+			left: 100%;
+			border-color: transparent;
+			border-left-color: $color;
+		}
+
+		.cd-date {
+		    position: absolute;
+		    width: 60px;
+		    left: -30px;
+	        top: 50px;
+		    font-size: 14px;
+		    background: #e5e5e5;
+		    color: #000;
+		    height: 20px;
+		    line-height: 0px;
+		    text-align: center;
+		    font-weight: 700;
+		    text-transform: uppercase;
+		}
+		.cd-timeline-block{
+			float: right;
+			&:last-child{
+				.cd-timeline-content {
+					border-bottom: 0px;
+				}
+			}
+			&::before {
+				top: 24px;
+				left: auto;
+				right: 100%;
+				border-color: transparent;
+				border-right-color: $color;
+			}
+
+			.cd-date {
+				left: auto;
+				right: 122%;
+				text-align: right;
+			}
+		}
+	}
+}
