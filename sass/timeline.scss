@@ -1,44 +1,7 @@
+@import "./vars.scss";
+@import "./mixins.scss";
+@import "./utils.scss";
 @import "bourbon/_bourbon.scss";
-@import "vars.scss";
-
-
-@function calculateRem($size) {
-  $remSize: $size / 16px;
-  @return $remSize * 1rem;
-}
-
-@mixin font-size($size) {
-  font-size: $size;
-  font-size: calculateRem($size);
-}
-
-// mixins - border radius
-
-@mixin border-radius($radius:.25em) {
-  border-radius: $radius;
-}
-
-// layout - breakpoints
-   
-$S:     320px;   
-$M:     768px;     
-$L:     1170px;     
-
-// layout - media queries
-
-@mixin MQ($canvas) {
-  @if $canvas == S {
-   @media only screen and (min-width: $S) { @content; } 
-  }
-  @else if $canvas == M {
-   @media only screen and (min-width: $M) { @content; } 
-  }
-  @else if $canvas == L {
-   @media only screen and (min-width: $L) { @content; } 
-  }
-}
-
-
 
 .cd-container { /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
 	width: calc(100%);
@@ -156,7 +119,7 @@ Main components
 	position: relative;
 	margin-left: 54px;
 	@include border-radius;
-	font-family: 'Source Sans Pro', sans-serif;
+	font-family: $primary-font;
 	padding: 1em;
 	border-bottom: 1px solid #f5f5f5;
 	@include clearfix;
@@ -165,14 +128,17 @@ Main components
 	}
 	h2 {
 		color: #2b2d2b;
-		font-size: 1em;
+		@include font-size(16px);
+		@include MQ(S) {
+			display: block;
+		}
 	}
 
 	p, .cd-read-more, .cd-date {
 		color: #5d5e5c;
-		font-family: 'Source Sans Pro', sans-serif;
+		font-family: $primary-font;
 		display: block;
-		@include font-size(12px);
+		@include font-size(14px);
 		a{
 			text-decoration: underline;
 		}
@@ -180,11 +146,12 @@ Main components
 	.cd-read-more{
 		color: #3cb1e6;
 		text-transform: uppercase;
-		@extend .fw-600;
+		@include font-size(12px);
+		font-weight: 600;
 	}
 	.cd-timeline-btn{
 		text-decoration: none;
-		font-size: 12px;
+		@include font-size(12px);
 		background: #666666;
 		color: #fff;
 		padding: 3px 5px;
@@ -213,52 +180,65 @@ Main components
 		}
 	}
 
-	@include MQ(L) {
-		margin-left: 54px;
-	    padding: 0px 1.6em 20px 3.6em;
-		width: calc(100% - 46px);
+	margin-left: 54px;
+    padding: 0px 1.6em 20px 3.6em;
+	@include MQ(S) {
+		padding: 0px 1.6em 20px 1.6em;
+	}
+	width: calc(100% - 54px);
 
+	&::before {
+		top: 24px;
+		left: 100%;
+		border-color: transparent;
+		border-left-color: $color;
+	}
+
+	.cd-date {
+	    position: absolute;
+	    width: 60px;
+	    left: -30px;
+        top: 50px;
+	    @include font-size(14px);
+	    background: #e5e5e5;
+	    color: #000;
+	    height: 20px;
+	    line-height: 0px;
+	    text-align: center;
+	    font-weight: 700;
+	    text-transform: uppercase;
+	    @include MQ(S) {
+	    	left: -60px;
+	    }
+	}
+	.cd-timeline-block{
+		float: right;
+		&:last-child{
+			.cd-timeline-content {
+				border-bottom: 0px;
+			}
+		}
 		&::before {
 			top: 24px;
-			left: 100%;
+			left: auto;
+			right: 100%;
 			border-color: transparent;
-			border-left-color: $color;
+			border-right-color: $color;
 		}
 
 		.cd-date {
-		    position: absolute;
-		    width: 60px;
-		    left: -30px;
-	        top: 50px;
-		    font-size: 14px;
-		    background: #e5e5e5;
-		    color: #000;
-		    height: 20px;
-		    line-height: 0px;
-		    text-align: center;
-		    font-weight: 700;
-		    text-transform: uppercase;
+			left: auto;
+			right: 122%;
+			text-align: right;
 		}
-		.cd-timeline-block{
-			float: right;
-			&:last-child{
-				.cd-timeline-content {
-					border-bottom: 0px;
-				}
-			}
-			&::before {
-				top: 24px;
-				left: auto;
-				right: 100%;
-				border-color: transparent;
-				border-right-color: $color;
-			}
-
-			.cd-date {
-				left: auto;
-				right: 122%;
-				text-align: right;
-			}
-		}
+	}
+}
+.discussion-wrapper{
+	width: calc(100% - 120px);
+	display: inline-block;
+	@include MQ(S) {
+		width: 100%;
+		display: block;
+		margin-top: 10px;
 	}
 }

@@ -1,35 +1,678 @@
-/*
-Sass::SyntaxError: ".cd-timeline-content .cd-read-more" failed to @extend ".fw-600".
-The selector ".fw-600" was not found.
-Use "@extend .fw-600 !optional" if the extend should be able to fail.
+/** font-sizes **/
+/* line 5, ../sass/utils.scss */
+.fnt-18 {
+  font-size: 18px;
+  font-size: 1.28571rem;
+}
 
+/* line 7, ../sass/utils.scss */
+.fnt-16 {
+  font-size: 16px;
+  font-size: 1.14286rem;
+}
 
-Backtrace:
-C:/Users/khaza/Desktop/File/gitTest/dashboard/sass/timeline.scss:183
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/extend.rb:62:in `block in check_extends_fired!'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util/subset_map.rb:105:in `block in each_value'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util/subset_map.rb:105:in `each'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/util/subset_map.rb:105:in `each_value'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/extend.rb:51:in `check_extends_fired!'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/extend.rb:16:in `visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:39:in `css_tree'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Sass::SyntaxError: \".cd-timeline-content .cd-read-more\" failed to @extend \".fw-600\".\A The selector \".fw-600\" was not found.\A Use \"@extend .fw-600 !optional\" if the extend should be able to fail.\A "; }
+/* line 9, ../sass/utils.scss */
+.fnt-14 {
+  font-size: 14px;
+  font-size: 1rem;
+}
+
+/* line 11, ../sass/utils.scss */
+.fnt-13 {
+  font-size: 13px;
+  font-size: 0.92857rem;
+}
+
+/* line 13, ../sass/utils.scss */
+.fnt-12 {
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+
+/* line 15, ../sass/utils.scss */
+.fnt-26 {
+  font-size: 26px;
+  font-size: 1.85714rem;
+}
+
+/* line 17, ../sass/utils.scss */
+.fnt-24 {
+  font-size: 24px;
+  font-size: 1.71429rem;
+}
+
+/* line 19, ../sass/utils.scss */
+.fnt-20 {
+  font-size: 20px;
+  font-size: 1.42857rem;
+}
+
+/* line 21, ../sass/utils.scss */
+.fnt-21 {
+  font-size: 21px;
+  font-size: 1.5rem;
+}
+
+/** background colors **/
+/* line 25, ../sass/utils.scss */
+.bg-clr {
+  background: #f4f4f4;
+}
+
+/* line 27, ../sass/utils.scss */
+.bg-clrwht {
+  background: #fff;
+}
+
+/* line 29, ../sass/utils.scss */
+.bg-clrfa {
+  background: #fafafa;
+}
+
+/* line 31, ../sass/utils.scss */
+.bg-lgt-gry {
+  background: #cccccc;
+}
+
+/* line 33, ../sass/utils.scss */
+.bg-333 {
+  background: #333;
+}
+
+/* line 35, ../sass/utils.scss */
+.bg-pinkf05 {
+  background: #f05567;
+}
+
+/* line 37, ../sass/utils.scss */
+.bg-brand {
+  background: #f05568;
+}
+
+/** colors **/
+/* line 40, ../sass/utils.scss */
+.clr-gry {
+  color: #999;
+}
+
+/* line 42, ../sass/utils.scss */
+.clr-white {
+  color: #fff;
+}
+
+/* line 44, ../sass/utils.scss */
+.clr-thickgray {
+  color: #666;
+}
+
+/* line 46, ../sass/utils.scss */
+.clr-ltgry {
+  color: #a2a2a2;
+}
+
+/* line 48, ../sass/utils.scss */
+.clr-lteblue {
+  color: #6ac4ef;
+}
+
+/* line 50, ../sass/utils.scss */
+.clr-pink {
+  color: #f05568;
+}
+
+/* line 52, ../sass/utils.scss */
+.clr-pink666 {
+  color: #ff6666;
+}
+
+/* line 54, ../sass/utils.scss */
+.clr-pinkf05 {
+  color: #f05567;
+}
+
+/** line-heights **/
+/* line 58, ../sass/utils.scss */
+.line-ht18 {
+  line-height: 18px !important;
+}
+
+/* line 61, ../sass/utils.scss */
+.lne-hgt {
+  line-height: 30px;
+}
+
+/* line 63, ../sass/utils.scss */
+.lne-hgt34 {
+  line-height: 34px;
+}
+
+/** block and inline elements **/
+/* line 67, ../sass/utils.scss */
+.text-transfrm {
+  text-transform: uppercase;
+}
+
+/* line 69, ../sass/utils.scss */
+.block-inline {
+  display: inline-block;
+}
+
+/* line 70, ../sass/utils.scss */
+.inline-flex {
+  display: inline-flex;
+}
+
+/** overide padding **/
+/* line 73, ../sass/utils.scss */
+.padding-rgt0 {
+  padding-right: 0;
+}
+
+/* line 75, ../sass/utils.scss */
+.padding-lft0 {
+  padding-left: 0;
+}
+
+/* line 77, ../sass/utils.scss */
+.padding0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 79, ../sass/utils.scss */
+.padding-rgt10 {
+  padding-right: 10px;
+}
+
+/* line 80, ../sass/utils.scss */
+.padding-rgt20 {
+  padding-right: 20px;
+}
+
+/** margins **/
+/* line 83, ../sass/utils.scss */
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+/* line 86, ../sass/utils.scss */
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+/** borders **/
+/* line 91, ../sass/utils.scss */
+.brder-rght {
+  border-right: 1px solid #dedede;
+}
+
+/* line 94, ../sass/utils.scss */
+.brder-lft {
+  border-left: 1px solid #dedede;
+}
+
+/* line 96, ../sass/utils.scss */
+.brder-lft-e3 {
+  border-left: 1px solid #e3e3e3;
+}
+
+/* line 98, ../sass/utils.scss */
+.ovflow {
+  overflow: hidden;
+}
+
+/* line 100, ../sass/utils.scss */
+.brder-0 {
+  border: 0px;
+  border-bottom: 0px !important;
+}
+
+/* line 104, ../sass/utils.scss */
+.vertcle-top {
+  vertical-align: top;
+}
+
+/** width **/
+/* line 108, ../sass/utils.scss */
+.wdth100p {
+  width: 100%;
+}
+
+/* line 109, ../sass/utils.scss */
+.width50 {
+  min-width: 50px;
+}
+
+/* line 110, ../sass/utils.scss */
+.wdth100 {
+  min-width: 100px;
+}
+
+/* line 113, ../sass/utils.scss */
+.br-50p {
+  border-radius: 50%;
+}
+
+/* line 116, ../sass/utils.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 119, ../sass/utils.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 123, ../sass/utils.scss */
+.italic {
+  font-style: italic;
+}
+
+/** flex **/
+/* line 128, ../sass/utils.scss */
+.flex {
+  display: flex;
+}
+
+/* line 131, ../sass/utils.scss */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* line 134, ../sass/utils.scss */
+.inline-table {
+  display: inline-table;
+}
+
+/** weight **/
+/* line 139, ../sass/utils.scss */
+.fw-300, .light-text, .light-text * {
+  font-weight: 300;
+}
+
+/* line 142, ../sass/utils.scss */
+.fw-400 {
+  font-weight: 400;
+}
+
+/* line 146, ../sass/utils.scss */
+.fw-500 {
+  font-weight: 500;
+}
+
+/* line 150, ../sass/utils.scss */
+.fw-600 {
+  font-weight: 600;
+}
+
+/* line 154, ../sass/utils.scss */
+.fw-700 {
+  font-weight: 700;
+}
+
+/** other utils **/
+/* line 161, ../sass/utils.scss */
+.light-text {
+  color: #a2a2a2;
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+/* line 165, ../sass/utils.scss */
+.light-text * {
+  color: #a2a2a2;
+}
+
+/* line 170, ../sass/utils.scss */
+.big-text {
+  font-size: 16px !important;
+}
+
+/* line 174, ../sass/utils.scss */
+.line-through {
+  text-decoration: line-through;
+}
+
+/* line 178, ../sass/utils.scss */
+.checkbox-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+/* line 183, ../sass/utils.scss */
+.center-items {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 201, ../sass/utils.scss */
+.file-type {
+  display: block;
+}
+/* line 204, ../sass/utils.scss */
+.file-type.docx:after {
+  background: #3cb1e6;
+  background-image: url(../images/DOCX.png);
+  content: '';
+  height: 15px;
+  display: block;
+  position: relative;
+  bottom: 10px;
+  right: -10px;
+  width: 30px;
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 211, ../sass/utils.scss */
+.file-type.xlsx:after {
+  background: #16aa4a;
+  background-image: url(../images/XLSX.png);
+  content: '';
+  height: 15px;
+  display: block;
+  position: relative;
+  bottom: 10px;
+  right: -10px;
+  width: 30px;
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 219, ../sass/utils.scss */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 6, ../sass/timeline.scss */
+.cd-container {
+  /* this class is used to give a max-width to the element it is applied to, and center it horizontally when it reaches that max-width */
+  width: calc(100%);
+  max-width: 1170px;
+  margin: 0 auto;
+}
+/* line 11, ../sass/timeline.scss */
+.cd-container::after {
+  /* clearfix */
+  content: '';
+  display: table;
+  clear: both;
+}
+
+/* -------------------------------- 
+
+Main components 
+
+-------------------------------- */
+/* line 25, ../sass/timeline.scss */
+#cd-timeline {
+  position: relative;
+  padding: 2em 0;
+  margin-top: 0em;
+  margin-bottom: 0em;
+}
+/* line 33, ../sass/timeline.scss */
+#cd-timeline::before {
+  /* this is the vertical line */
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 18px;
+  height: 100%;
+  width: 4px;
+  background: #e5e5e5;
+}
+@media only screen and (min-width: 1170px) {
+  /* line 25, ../sass/timeline.scss */
+  #cd-timeline {
+    margin-top: 0em;
+    margin-bottom: 0em;
+  }
+  /* line 50, ../sass/timeline.scss */
+  #cd-timeline::before {
+    left: 52px;
+    margin-left: -2px;
+  }
+}
+
+/* line 57, ../sass/timeline.scss */
+.cd-timeline-block {
+  position: relative;
+  margin: 2em 0;
+}
+/* line 20, ../sass/bourbon/addons/_clearfix.scss */
+.cd-timeline-block::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 62, ../sass/timeline.scss */
+.cd-timeline-block:first-child {
+  margin-top: 0;
+}
+/* line 65, ../sass/timeline.scss */
+.cd-timeline-block:last-child {
+  margin-bottom: 0;
+}
+/* line 67, ../sass/timeline.scss */
+.cd-timeline-block:last-child .cd-timeline-content {
+  border-bottom: 0px;
+}
+@media only screen and (min-width: 1170px) {
+  /* line 57, ../sass/timeline.scss */
+  .cd-timeline-block {
+    margin: 2em 0;
+  }
+  /* line 74, ../sass/timeline.scss */
+  .cd-timeline-block:first-child {
+    margin-top: 0;
+  }
+  /* line 78, ../sass/timeline.scss */
+  .cd-timeline-block:last-child {
+    margin-bottom: 0;
+  }
+}
+
+/* line 84, ../sass/timeline.scss */
+.cd-timeline-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40px;
+  height: 40px;
+  max-width: 40px;
+  max-height: 40px;
+  border-radius: 50%;
+  box-shadow: 0 0 0 4px #3cb1e6 inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #3cb1e6;
+}
+/* line 98, ../sass/timeline.scss */
+.cd-timeline-img img {
+  display: block;
+  max-width: 24px;
+  position: relative;
+  padding: 2px;
+  vertical-align: baseline;
+  display: block;
+  position: relative;
+  text-align: center;
+  max-height: 30px;
+}
+@media only screen and (min-width: 1170px) {
+  /* line 84, ../sass/timeline.scss */
+  .cd-timeline-img {
+    width: 60px;
+    height: 60px;
+    left: 52px;
+    margin-left: -20px;
+  }
+}
+
+/* line 118, ../sass/timeline.scss */
+.cd-timeline-content {
+  position: relative;
+  margin-left: 54px;
+  border-radius: 0.25em;
+  font-family: "Source Sans Pro", sans-serif;
+  padding: 1em;
+  border-bottom: 1px solid #f5f5f5;
+  margin-left: 54px;
+  padding: 0px 1.6em 20px 3.6em;
+  width: calc(100% - 54px);
+}
+/* line 20, ../sass/bourbon/addons/_clearfix.scss */
+.cd-timeline-content::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+/* line 126, ../sass/timeline.scss */
+.cd-timeline-content img {
+  margin-top: 7px;
+}
+/* line 129, ../sass/timeline.scss */
+.cd-timeline-content h2 {
+  color: #2b2d2b;
+  font-size: 16px;
+  font-size: 1.14286rem;
+}
+@media only screen and (max-width: 480px) {
+  /* line 129, ../sass/timeline.scss */
+  .cd-timeline-content h2 {
+    display: block;
+  }
+}
+/* line 137, ../sass/timeline.scss */
+.cd-timeline-content p, .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+  color: #5d5e5c;
+  font-family: "Source Sans Pro", sans-serif;
+  display: block;
+  font-size: 14px;
+  font-size: 1rem;
+}
+/* line 142, ../sass/timeline.scss */
+.cd-timeline-content p a, .cd-timeline-content .cd-read-more a, .cd-timeline-content .cd-date a {
+  text-decoration: underline;
+}
+/* line 146, ../sass/timeline.scss */
+.cd-timeline-content .cd-read-more {
+  color: #3cb1e6;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  font-weight: 600;
+}
+/* line 152, ../sass/timeline.scss */
+.cd-timeline-content .cd-timeline-btn {
+  text-decoration: none;
+  font-size: 12px;
+  font-size: 0.85714rem;
+  background: #666666;
+  color: #fff;
+  padding: 3px 5px;
+}
+/* line 159, ../sass/timeline.scss */
+.cd-timeline-content p {
+  margin: 0.2em 0;
+  line-height: 1.6;
+}
+/* line 163, ../sass/timeline.scss */
+.cd-timeline-content .cd-date {
+  float: left;
+  padding: .8em 0;
+  opacity: .7;
+}
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+  /* line 170, ../sass/timeline.scss */
+  .cd-timeline-content h2 {
+    font-size: 16px;
+    font-size: 1.14286rem;
+  }
+  /* line 174, ../sass/timeline.scss */
+  .cd-timeline-content p {
+    font-size: 16px;
+    font-size: 1.14286rem;
+  }
+  /* line 178, ../sass/timeline.scss */
+  .cd-timeline-content .cd-read-more, .cd-timeline-content .cd-date {
+    font-size: 14px;
+    font-size: 1rem;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 118, ../sass/timeline.scss */
+  .cd-timeline-content {
+    padding: 0px 1.6em 20px 1.6em;
+  }
+}
+/* line 190, ../sass/timeline.scss */
+.cd-timeline-content::before {
+  top: 24px;
+  left: 100%;
+  border-color: transparent;
+  border-left-color: #3cb1e6;
+}
+/* line 197, ../sass/timeline.scss */
+.cd-timeline-content .cd-date {
+  position: absolute;
+  width: 60px;
+  left: -30px;
+  top: 50px;
+  font-size: 14px;
+  font-size: 1rem;
+  background: #e5e5e5;
+  color: #000;
+  height: 20px;
+  line-height: 0px;
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+@media only screen and (max-width: 480px) {
+  /* line 197, ../sass/timeline.scss */
+  .cd-timeline-content .cd-date {
+    left: -60px;
+  }
+}
+/* line 214, ../sass/timeline.scss */
+.cd-timeline-content .cd-timeline-block {
+  float: right;
+}
+/* line 217, ../sass/timeline.scss */
+.cd-timeline-content .cd-timeline-block:last-child .cd-timeline-content {
+  border-bottom: 0px;
+}
+/* line 221, ../sass/timeline.scss */
+.cd-timeline-content .cd-timeline-block::before {
+  top: 24px;
+  left: auto;
+  right: 100%;
+  border-color: transparent;
+  border-right-color: #3cb1e6;
+}
+/* line 229, ../sass/timeline.scss */
+.cd-timeline-content .cd-timeline-block .cd-date {
+  left: auto;
+  right: 122%;
+  text-align: right;
+}
+
+/* line 236, ../sass/timeline.scss */
+.discussion-wrapper {
+  width: calc(100% - 120px);
+  display: inline-block;
+}
+@media only screen and (max-width: 480px) {
+  /* line 236, ../sass/timeline.scss */
+  .discussion-wrapper {
+    width: 100%;
+    display: block;
+    margin-top: 10px;
+  }
+}

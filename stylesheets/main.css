@@ -1,66 +1,598 @@
-/*
-Error: Undefined variable: "$body-bg".
-        on line 2 of C:/Users/khaza/Desktop/File/gitTest/dashboard/sass/main.scss
+/** font-sizes **/
+/* line 5, ../sass/utils.scss */
+.fnt-18 {
+  font-size: 18px;
+  font-size: 1.28571rem;
+}
 
-1: body{
-2: 	background: $body-bg;
-3: }
-4: .main-wrapper{
-5: 	width: 100%;
-6: 	border: 0;
-7: 	margin: 0;
+/* line 7, ../sass/utils.scss */
+.fnt-16, .show-more {
+  font-size: 16px;
+  font-size: 1.14286rem;
+}
 
-Backtrace:
-C:/Users/khaza/Desktop/File/gitTest/dashboard/sass/main.scss:2
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/variable.rb:49:in `_perform'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/script/tree/node.rb:58:in `perform'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:397:in `visit_prop'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/tree/root_node.rb:20:in `render'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/engine.rb:281:in `render'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:17:in `block in render'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:29:in `with_import_scope'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/compass-import-once-1.0.5/lib/compass/import-once/engine.rb:16:in `render'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:494:in `update_stylesheet'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
-C:/RailsInstaller/Ruby2.3.0/lib/ruby/gems/2.3.0/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
-*/
-body:before {
-  white-space: pre;
-  font-family: monospace;
-  content: "Error: Undefined variable: \"$body-bg\".\A         on line 2 of C:/Users/khaza/Desktop/File/gitTest/dashboard/sass/main.scss\A \A 1: body{\A 2: 	background: $body-bg;\A 3: }\A 4: .main-wrapper{\A 5: 	width: 100%;\A 6: 	border: 0;\A 7: 	margin: 0;"; }
+/* line 9, ../sass/utils.scss */
+.fnt-14 {
+  font-size: 14px;
+  font-size: 1rem;
+}
+
+/* line 11, ../sass/utils.scss */
+.fnt-13 {
+  font-size: 13px;
+  font-size: 0.92857rem;
+}
+
+/* line 13, ../sass/utils.scss */
+.fnt-12 {
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+
+/* line 15, ../sass/utils.scss */
+.fnt-26 {
+  font-size: 26px;
+  font-size: 1.85714rem;
+}
+
+/* line 17, ../sass/utils.scss */
+.fnt-24, .main-wrapper .content-wraper .search-results .results, .main-wrapper .content-wraper .search-results .results > span, .main-wrapper .content-wraper .search-box input {
+  font-size: 24px;
+  font-size: 1.71429rem;
+}
+
+/* line 19, ../sass/utils.scss */
+.fnt-20 {
+  font-size: 20px;
+  font-size: 1.42857rem;
+}
+
+/* line 21, ../sass/utils.scss */
+.fnt-21 {
+  font-size: 21px;
+  font-size: 1.5rem;
+}
+
+/** background colors **/
+/* line 25, ../sass/utils.scss */
+.bg-clr {
+  background: #f4f4f4;
+}
+
+/* line 27, ../sass/utils.scss */
+.bg-clrwht {
+  background: #fff;
+}
+
+/* line 29, ../sass/utils.scss */
+.bg-clrfa {
+  background: #fafafa;
+}
+
+/* line 31, ../sass/utils.scss */
+.bg-lgt-gry {
+  background: #cccccc;
+}
+
+/* line 33, ../sass/utils.scss */
+.bg-333 {
+  background: #333;
+}
+
+/* line 35, ../sass/utils.scss */
+.bg-pinkf05 {
+  background: #f05567;
+}
+
+/* line 37, ../sass/utils.scss */
+.bg-brand {
+  background: #f05568;
+}
+
+/** colors **/
+/* line 40, ../sass/utils.scss */
+.clr-gry {
+  color: #999;
+}
+
+/* line 42, ../sass/utils.scss */
+.clr-white {
+  color: #fff;
+}
+
+/* line 44, ../sass/utils.scss */
+.clr-thickgray {
+  color: #666;
+}
+
+/* line 46, ../sass/utils.scss */
+.clr-ltgry {
+  color: #a2a2a2;
+}
+
+/* line 48, ../sass/utils.scss */
+.clr-lteblue {
+  color: #6ac4ef;
+}
+
+/* line 50, ../sass/utils.scss */
+.clr-pink {
+  color: #f05568;
+}
+
+/* line 52, ../sass/utils.scss */
+.clr-pink666 {
+  color: #ff6666;
+}
+
+/* line 54, ../sass/utils.scss */
+.clr-pinkf05 {
+  color: #f05567;
+}
+
+/** line-heights **/
+/* line 58, ../sass/utils.scss */
+.line-ht18 {
+  line-height: 18px !important;
+}
+
+/* line 61, ../sass/utils.scss */
+.lne-hgt {
+  line-height: 30px;
+}
+
+/* line 63, ../sass/utils.scss */
+.lne-hgt34 {
+  line-height: 34px;
+}
+
+/** block and inline elements **/
+/* line 67, ../sass/utils.scss */
+.text-transfrm {
+  text-transform: uppercase;
+}
+
+/* line 69, ../sass/utils.scss */
+.block-inline {
+  display: inline-block;
+}
+
+/* line 70, ../sass/utils.scss */
+.inline-flex {
+  display: inline-flex;
+}
+
+/** overide padding **/
+/* line 73, ../sass/utils.scss */
+.padding-rgt0 {
+  padding-right: 0;
+}
+
+/* line 75, ../sass/utils.scss */
+.padding-lft0 {
+  padding-left: 0;
+}
+
+/* line 77, ../sass/utils.scss */
+.padding0 {
+  padding-top: 0;
+  padding-bottom: 0;
+}
+
+/* line 79, ../sass/utils.scss */
+.padding-rgt10 {
+  padding-right: 10px;
+}
+
+/* line 80, ../sass/utils.scss */
+.padding-rgt20 {
+  padding-right: 20px;
+}
+
+/** margins **/
+/* line 83, ../sass/utils.scss */
+.mt-10 {
+  margin-top: 10px !important;
+}
+
+/* line 86, ../sass/utils.scss */
+.mt-20 {
+  margin-top: 20px !important;
+}
+
+/** borders **/
+/* line 91, ../sass/utils.scss */
+.brder-rght {
+  border-right: 1px solid #dedede;
+}
+
+/* line 94, ../sass/utils.scss */
+.brder-lft {
+  border-left: 1px solid #dedede;
+}
+
+/* line 96, ../sass/utils.scss */
+.brder-lft-e3 {
+  border-left: 1px solid #e3e3e3;
+}
+
+/* line 98, ../sass/utils.scss */
+.ovflow {
+  overflow: hidden;
+}
+
+/* line 100, ../sass/utils.scss */
+.brder-0 {
+  border: 0px;
+  border-bottom: 0px !important;
+}
+
+/* line 104, ../sass/utils.scss */
+.vertcle-top {
+  vertical-align: top;
+}
+
+/** width **/
+/* line 108, ../sass/utils.scss */
+.wdth100p {
+  width: 100%;
+}
+
+/* line 109, ../sass/utils.scss */
+.width50 {
+  min-width: 50px;
+}
+
+/* line 110, ../sass/utils.scss */
+.wdth100 {
+  min-width: 100px;
+}
+
+/* line 113, ../sass/utils.scss */
+.br-50p {
+  border-radius: 50%;
+}
+
+/* line 116, ../sass/utils.scss */
+.pull-left {
+  float: left;
+}
+
+/* line 119, ../sass/utils.scss */
+.pull-right {
+  float: right;
+}
+
+/* line 123, ../sass/utils.scss */
+.italic {
+  font-style: italic;
+}
+
+/** flex **/
+/* line 128, ../sass/utils.scss */
+.flex {
+  display: flex;
+}
+
+/* line 131, ../sass/utils.scss */
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+/* line 134, ../sass/utils.scss */
+.inline-table {
+  display: inline-table;
+}
+
+/** weight **/
+/* line 139, ../sass/utils.scss */
+.fw-300, .light-text, .light-text *, .main-wrapper .content-wraper .search-results .results > span {
+  font-weight: 300;
+}
+
+/* line 142, ../sass/utils.scss */
+.fw-400 {
+  font-weight: 400;
+}
+
+/* line 146, ../sass/utils.scss */
+.fw-500, .main-wrapper .content-wraper .search-results .results, .checkbox-custom-label {
+  font-weight: 500;
+}
+
+/* line 150, ../sass/utils.scss */
+.fw-600, .main-wrapper .content-wraper .search-box input {
+  font-weight: 600;
+}
+
+/* line 154, ../sass/utils.scss */
+.fw-700, .show-more {
+  font-weight: 700;
+}
+
+/** other utils **/
+/* line 161, ../sass/utils.scss */
+.light-text {
+  color: #a2a2a2;
+  font-size: 12px;
+  font-size: 0.85714rem;
+}
+/* line 165, ../sass/utils.scss */
+.light-text * {
+  color: #a2a2a2;
+}
+
+/* line 170, ../sass/utils.scss */
+.big-text {
+  font-size: 16px !important;
+}
+
+/* line 174, ../sass/utils.scss */
+.line-through {
+  text-decoration: line-through;
+}
+
+/* line 178, ../sass/utils.scss */
+.checkbox-custom {
+  opacity: 0;
+  position: absolute;
+}
+
+/* line 183, ../sass/utils.scss */
+.center-items {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 201, ../sass/utils.scss */
+.file-type {
+  display: block;
+}
+/* line 204, ../sass/utils.scss */
+.file-type.docx:after {
+  background: #3cb1e6;
+  background-image: url(../images/DOCX.png);
+  content: '';
+  height: 15px;
+  display: block;
+  position: relative;
+  bottom: 10px;
+  right: -10px;
+  width: 30px;
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+/* line 211, ../sass/utils.scss */
+.file-type.xlsx:after {
+  background: #16aa4a;
+  background-image: url(../images/XLSX.png);
+  content: '';
+  height: 15px;
+  display: block;
+  position: relative;
+  bottom: 10px;
+  right: -10px;
+  width: 30px;
+  background-size: 23px;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* line 219, ../sass/utils.scss */
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* line 4, ../sass/main.scss */
+.main-wrapper {
+  width: 100%;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+/* line 10, ../sass/main.scss */
+.main-wrapper .content-wraper {
+  flex-grow: 1;
+  margin-left: 105px;
+  width: calc(100% - 105px);
+}
+@media only screen and (max-width: 480px) {
+  /* line 10, ../sass/main.scss */
+  .main-wrapper .content-wraper {
+    margin-left: 0px;
+    width: calc(100% - 105px);
+  }
+}
+/* line 18, ../sass/main.scss */
+.main-wrapper .content-wraper .search-results {
+  background: #d8d8d8;
+  height: 52px;
+  padding: 0px 30px;
+  display: flex;
+  align-items: center;
+  color: #000;
+}
+@media only screen and (max-width: 480px) {
+  /* line 21, ../sass/main.scss */
+  .main-wrapper .content-wraper .search-results .results {
+    font-size: 16px;
+  }
+}
+/* line 27, ../sass/main.scss */
+.main-wrapper .content-wraper .search-results .results > span {
+  display: inline-block;
+  margin-left: 10px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 27, ../sass/main.scss */
+  .main-wrapper .content-wraper .search-results .results > span {
+    font-size: 16px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+  /* line 27, ../sass/main.scss */
+  .main-wrapper .content-wraper .search-results .results > span {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 27, ../sass/main.scss */
+  .main-wrapper .content-wraper .search-results .results > span {
+    margin-left: 0px;
+  }
+}
+@media only screen and (max-width: 480px) {
+  /* line 18, ../sass/main.scss */
+  .main-wrapper .content-wraper .search-results {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 768px) {
+  /* line 18, ../sass/main.scss */
+  .main-wrapper .content-wraper .search-results {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+}
+/* line 57, ../sass/main.scss */
+.main-wrapper .content-wraper .search-box, .main-wrapper .content-wraper .content-inner {
+  margin: 20px 30px;
+  border: 1px solid #d3d3d3;
+  box-shadow: 2px 2px 4px 0px #e4dfdf;
+  background-color: #fff;
+}
+@media only screen and (max-width: 480px) {
+  /* line 57, ../sass/main.scss */
+  .main-wrapper .content-wraper .search-box, .main-wrapper .content-wraper .content-inner {
+    margin: 10px 5px;
+  }
+}
+/* line 64, ../sass/main.scss */
+.main-wrapper .content-wraper .search-box {
+  position: relative;
+  margin-bottom: 5px;
+  margin-top: 25px;
+}
+/* line 68, ../sass/main.scss */
+.main-wrapper .content-wraper .search-box input {
+  height: 52px;
+  border: 0;
+  width: 100%;
+  box-sizing: border-box;
+  padding-left: 50px;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #323330;
+}
+@media only screen and (max-width: 480px) {
+  /* line 68, ../sass/main.scss */
+  .main-wrapper .content-wraper .search-box input {
+    font-size: 20px;
+  }
+}
+/* line 80, ../sass/main.scss */
+.main-wrapper .content-wraper .search-box span {
+  width: 52px;
+  height: 52px;
+  border-radius: 15px;
+  background: url(../images/search.png);
+  background-size: 25px;
+  display: inline-block;
+  background-repeat: no-repeat;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-position: center;
+}
+/* line 94, ../sass/main.scss */
+.main-wrapper .content-wraper .check-boxes {
+  margin: 10px 30px 30px 30px;
+}
+@media only screen and (max-width: 480px) {
+  /* line 94, ../sass/main.scss */
+  .main-wrapper .content-wraper .check-boxes {
+    margin: 10px 5px;
+  }
+}
+/* line 98, ../sass/main.scss */
+.main-wrapper .content-wraper .check-boxes ul li {
+  display: inline-block;
+}
+
+/* line 107, ../sass/main.scss */
+.show-more {
+  width: 100%;
+  height: 32px;
+  background: lightgray;
+  text-transform: uppercase;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* line 119, ../sass/main.scss */
+.tag {
+  border: 1px solid #f5f5f5;
+  height: 20px;
+  padding: 3px 5px;
+  margin-left: 10px;
+  font-size: 14px;
+  font-size: 1rem;
+}
+@media only screen and (max-width: 480px) {
+  /* line 119, ../sass/main.scss */
+  .tag {
+    margin-left: 0px;
+    margin-top: 10px;
+  }
+}
+
+/* line 128, ../sass/main.scss */
+.checkbox-custom, .checkbox-custom-label {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 5px;
+  cursor: pointer;
+}
+
+/* line 135, ../sass/main.scss */
+.checkbox-custom-label {
+  position: relative;
+  font-size: 14px;
+  color: #2b2d2b;
+  margin-right: 15px;
+}
+
+/* line 143, ../sass/main.scss */
+.checkbox-custom + .checkbox-custom-label:before {
+  content: '';
+  background: #d8d8d8;
+  border: 4px solid #ddd;
+  display: inline-block;
+  vertical-align: middle;
+  width: 16px;
+  height: 16px;
+  padding: 2px;
+  margin-right: 5px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+/* line 157, ../sass/main.scss */
+.checkbox-custom:checked + .checkbox-custom-label:before {
+  background: #3cb1e6;
+  border-radius: 2px;
+}
+
+/* line 163, ../sass/main.scss */
+.checkbox-custom:focus + .checkbox-custom-label {
+  outline: 1px solid #d8d8d8;
+  /* focus style */
+}
